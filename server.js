@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 const app = express();
 
 app.use(express.static('public'))
-
+ 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
